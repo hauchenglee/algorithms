@@ -1,6 +1,6 @@
 package sort;
 
-import util.SortingAbstractions;
+import util.SortingUtils;
 
 public class ShellSort {
 
@@ -63,8 +63,8 @@ public class ShellSort {
 
         while (h >= 1) {
             for (int i = h; i < N; i++) {
-                for (int j = i; j >= h && SortingAbstractions.less(a[j], a[j - h]); j -= h) {
-                    SortingAbstractions.exch(a, j, j - h);
+                for (int j = i; j >= h && SortingUtils.less(a[j], a[j - h]); j -= h) {
+                    SortingUtils.exch(a, j, j - h);
                 }
             }
             h = h / 3;

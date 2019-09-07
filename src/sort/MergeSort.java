@@ -1,7 +1,7 @@
 package sort;
 
 import edu.princeton.cs.algs4.Insertion;
-import util.SortingAbstractions;
+import util.SortingUtils;
 
 public class MergeSort {
     private static Comparable[] aux;
@@ -16,8 +16,8 @@ public class MergeSort {
      * @param hi the end of the array
      */
     private static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi) {
-        assert SortingAbstractions.isSorted(a, lo, mid);
-        assert SortingAbstractions.isSorted(a, mid + 1, hi);
+        assert SortingUtils.isSorted(a, lo, mid);
+        assert SortingUtils.isSorted(a, mid + 1, hi);
 
         // copy everything over to the auxiliary array
         for (int k = lo; k <= hi; k++) aux[k] = a[k];
@@ -28,11 +28,11 @@ public class MergeSort {
         for (int k = lo; k <= hi; k++) {
             if (i > mid) a[k] = aux[j++];
             else if (j > hi) a[k] = aux[i++];
-            else if (SortingAbstractions.less(aux[j], aux[i])) a[k] = aux[j++];
+            else if (SortingUtils.less(aux[j], aux[i])) a[k] = aux[j++];
             else a[k] = aux[i++];
         }
 
-        assert SortingAbstractions.isSorted(a, lo, hi);
+        assert SortingUtils.isSorted(a, lo, hi);
     }
 
     private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
@@ -57,7 +57,7 @@ public class MergeSort {
         // Stop if already sorted.
         // -> Is biggest item if first half <= smallest item in second half?
         // -> Helps for partially-ordered arrays.
-        if (!SortingAbstractions.less(a[mid + 1], a[mid])) return;
+        if (!SortingUtils.less(a[mid + 1], a[mid])) return;
 
         // and then merge them together
         merge(a, aux, lo, mid, hi);

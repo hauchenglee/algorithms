@@ -1,7 +1,5 @@
 package stacks_and_queues;
 
-import util.SortingAbstractions;
-
 // APIs and Elementary Implementations
 // PriorityQueue
 public class MaxPQ<Key extends Comparable<Key>> {

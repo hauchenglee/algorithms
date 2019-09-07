@@ -1,6 +1,6 @@
 package util;
 
-public class SortingAbstractions {
+public class SortingUtils {
     // Less. Is item v less than w?
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
