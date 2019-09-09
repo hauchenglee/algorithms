@@ -12,6 +12,16 @@ A: Has methods hasNext() and next().
 
 public class Stack<Item> implements Iterable<Item> {
 
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.push(3);
+        stack.push(5);
+        stack.pop();
+        boolean r = stack.isEmpty();
+        System.out.println(r);
+    }
+
     private Node first = null;
 
     private class Node {
