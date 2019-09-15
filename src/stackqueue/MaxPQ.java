@@ -1,4 +1,4 @@
-package stacks_and_queues;
+package stackqueue;
 
 // APIs and Elementary Implementations
 // PriorityQueue

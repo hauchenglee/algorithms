@@ -1,11 +1,11 @@
 package util;
 
 public class TimeUtils {
-    static long start() {
+    public static long start() {
         return System.nanoTime();
     }
 
-    static long end() {
+    public static long end() {
         return System.nanoTime();
     }
 
@@ -13,7 +13,7 @@ public class TimeUtils {
         return e - s;
     }
 
-    static double toSeconds(long start, long end) {
+    public static double toSeconds(long start, long end) {
         double elapsedTime = (double) end - (double) start;
         return elapsedTime / 1_000_000_000;
     }

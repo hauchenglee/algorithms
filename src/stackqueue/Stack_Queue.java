@@ -1,4 +1,4 @@
-package stacks_and_queues;
+package stackqueue;
 
 public class Stack_Queue {
     // no.1 ref

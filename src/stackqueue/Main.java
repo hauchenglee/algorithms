@@ -1,4 +1,4 @@
-package stacks_and_queues;
+package stackqueue;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;

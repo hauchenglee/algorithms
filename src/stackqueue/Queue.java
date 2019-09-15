@@ -1,13 +1,20 @@
-package stacks_and_queues;
+package stackqueue;
 
-public class Queue {
+import java.util.Iterator;
+
+public class Queue<Item> implements Iterable<Item> {
     // 我们用一个有长度的list来代表队列
     // 我们需要两个指针
     // 一个指向第一个元素，另一个指向最后一个元素
     private Node first, last;
 
+    @Override
+    public Iterator<Item> iterator() {
+        return null;
+    }
+
     private class Node {
-        String item;
+        Item item;
         Node next;
     }
 
@@ -15,7 +22,7 @@ public class Queue {
         return first == null;
     }
 
-    public void enqueue(String item) {
+    public void enqueue(Item item) {
         // save a link to the last node
         Node oldLast = last;
 
@@ -31,9 +38,9 @@ public class Queue {
         else oldLast.next = last;
     }
 
-    public String dequeue() {
+    public Item dequeue() {
         // save item to return
-        String item = first.item;
+        Item item = first.item;
 
         // delete first node
         first = first.next;
