@@ -1,6 +1,6 @@
 package trees.bst;
 
-import stackqueue.Queue;
+import stackqueue.list.Queue;
 
 public class BST<Key extends Comparable<Key>, Value> {
     private Node root;

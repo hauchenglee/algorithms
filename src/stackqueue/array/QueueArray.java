@@ -1,4 +1,4 @@
-package stackqueue;
+package stackqueue.array;
 
 public class QueueArray {
 }

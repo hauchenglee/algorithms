@@ -14,13 +14,6 @@ build
 # Node.js
 node_modules
 
-# My configurations:
-# .gitignore
-db.ini
-deploy_key_rsa
-.idea/
-*.iml
-
 # Vue
 .DS_Store
 node_modules/
@@ -38,3 +31,15 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+# Project
+target/
+
+# Intellij
+.idea/
+*.iml
+
+# My configurations:
+# .gitignore
+db.ini
+deploy_key_rsa
