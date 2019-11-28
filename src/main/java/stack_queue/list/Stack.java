@@ -1,4 +1,4 @@
-package stackqueue.list;
+package stack_queue.list;
 
 import java.util.Iterator;
 

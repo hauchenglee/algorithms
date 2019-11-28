@@ -1,4 +1,4 @@
-package stackqueue.list;
+package stack_queue.list;
 
 public class LinkedStackOfStrings {
     private Node first = null;

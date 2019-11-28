@@ -1,4 +1,4 @@
-package stackqueue.array;
+package stack_queue.array;
 
 public class FixedCapacityStackOfStrings {
     private String[] s;

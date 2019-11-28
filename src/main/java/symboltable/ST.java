@@ -11,7 +11,7 @@ public class ST<Key extends Comparable<Key>, Value> {
     void put(Key key, Value val) {
         if (key == null) throw new IllegalArgumentException("calls put() with null key");
         if (val == null) st.remove(key);
-        else             st.put(key, val);
+        else st.put(key, val);
     }
 
     Value get(Key key) {

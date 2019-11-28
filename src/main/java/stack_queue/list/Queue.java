@@ -1,4 +1,4 @@
-package stackqueue.list;
+package stack_queue.list;
 
 import java.util.Iterator;
 
@@ -34,7 +34,7 @@ public class Queue<Item> implements Iterable<Item> {
         // special cases for empty queue
         if (isEmpty()) first = last;
 
-        // link the new node to the end of the list
+            // link the new node to the end of the list
         else oldLast.next = last;
     }
 

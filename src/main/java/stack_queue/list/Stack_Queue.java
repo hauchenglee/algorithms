@@ -1,4 +1,4 @@
-package stackqueue.list;
+package stack_queue.list;
 
 public class Stack_Queue {
     // no.1 ref

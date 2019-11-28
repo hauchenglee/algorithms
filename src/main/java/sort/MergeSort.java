@@ -9,11 +9,12 @@ public class MergeSort {
 
     /**
      * merge sort
-     * @param a array of comparable
+     *
+     * @param a   array of comparable
      * @param aux auxiliary array
-     * @param lo the first part of the array to be sorted
+     * @param lo  the first part of the array to be sorted
      * @param mid the midpoint that divides the first part from the second
-     * @param hi the end of the array
+     * @param hi  the end of the array
      */
     private static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi) {
         assert SortingUtils.isSorted(a, lo, mid);
@@ -77,7 +78,7 @@ public class MergeSort {
         aux = new Comparable[N];
         for (int sz = 1; sz < N; sz = sz + sz) {
             for (int lo = 0; lo < N - sz; lo += sz + sz) {
-                mergeBU(a, lo, lo + sz - 1, Math.min(lo + sz + sz -1, N - 1));
+                mergeBU(a, lo, lo + sz - 1, Math.min(lo + sz + sz - 1, N - 1));
             }
         }
     }

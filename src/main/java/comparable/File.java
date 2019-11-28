@@ -1,4 +1,4 @@
-package sort;
+package comparable;
 
 public class File implements Comparable<File> {
     @Override

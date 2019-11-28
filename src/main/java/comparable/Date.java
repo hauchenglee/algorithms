@@ -1,4 +1,4 @@
-package sort;
+package comparable;
 
 /**
  * typically unsafe to use equals with inheritance
@@ -26,6 +26,7 @@ public final class Date implements Comparable<Date> {
 
     /**
      * Symbol Table API
+     *
      * @param y must be Object. Why? Experts still debate
      * @return
      */

@@ -1,4 +1,4 @@
-package sort;
+package stack_queue.list;
 
 public class DoubleLinkedList<Item> {
     private Node first;
@@ -119,11 +119,9 @@ public class DoubleLinkedList<Item> {
             newNode.item = item;
             target.next = newNode;
             newNode.prev = target;
-            newNode.next= oldNext;
+            newNode.next = oldNext;
             oldNext.prev = newNode;
             itemCount++;
         }
-
     }
-
 }

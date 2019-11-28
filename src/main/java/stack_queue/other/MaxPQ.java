@@ -1,4 +1,4 @@
-package stackqueue;
+package stack_queue.other;
 
 // APIs and Elementary Implementations
 // PriorityQueue
@@ -7,7 +7,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
     private int N;
 
     MaxPQ(int capacity) {
-        pq = (Key[]) new  Comparable[capacity + 1];
+        pq = (Key[]) new Comparable[capacity + 1];
     }
 
     void insert(Key x) {

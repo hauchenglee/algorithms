@@ -1,8 +1,8 @@
-package stackqueue;
+package stack_queue.other;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-import stackqueue.list.Stack;
+import stack_queue.list.Stack;
 
 public class Main {
     public static void main(String[] args) {

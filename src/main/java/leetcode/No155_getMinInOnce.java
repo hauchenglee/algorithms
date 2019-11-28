@@ -26,20 +26,28 @@ public class No155_getMinInOnce {
         }
 
         public void pop() {
-            if (!isEmpty()) { first = first.next; }
+            if (!isEmpty()) {
+                first = first.next;
+            }
         }
 
         public int top() {
-            if (!isEmpty()) { return first.item; }
+            if (!isEmpty()) {
+                return first.item;
+            }
             throw new RuntimeException();
         }
 
         public int getMin() {
-            if (isEmpty()) { throw new RuntimeException(); }
+            if (isEmpty()) {
+                throw new RuntimeException();
+            }
 
             int min = top();
             while (first != null) {
-                if (first.item < min) { min = first.item; }
+                if (first.item < min) {
+                    min = first.item;
+                }
                 first = first.next;
             }
             return min;

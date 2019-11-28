@@ -1,6 +1,7 @@
 package sort;
 
 import util.Constants;
+
 import java.util.Arrays;
 
 // https://www.zhihu.com/question/20063815
@@ -23,23 +24,6 @@ public class BubbleSort {
                     int temp = ar[j + 1];
                     ar[j + 1] = ar[j];
                     ar[j] = temp;
-
-                    /*
-                      if da > xiao
-                      :
-                      __da__ // __xiao__ // __()__
-
-                      __da__ // __(x)__ // __-> xiao__
-
-                      __(x)__ // __-> da__ // __xiao__
-
-                      __-> xiao__ // __-> da__ // __(x)__
-                     */
-                    /*
-                    int t = a;
-                    a = b;
-                    b = t;
-                     */
                 }
             }
         }
@@ -58,7 +42,5 @@ public class BubbleSort {
             }
         }
         System.out.println(Arrays.toString(br));
-
-        // my test
     }
 }
